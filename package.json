@@ -1,0 +1,19 @@
+{
+  "name": "chat_app",
+  "version": "1.0.0",
+  "description": "Chat App",
+  "main": "server.js",
+  "scripts": {
+    "deploy-to-github-pages": "git add public && git commit -m 'Initial public subtree commit' && git subtree push --prefix public origin gh-pages",
+    "start": "node server.js",
+    "inspect": "nodemon --inspect server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Muhammad Usman",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "nodemon": "^2.0.20",
+    "socket.io": "^2.0.2"
+  }
+}
